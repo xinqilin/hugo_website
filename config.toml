@@ -1,4 +1,120 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://xinqilin.github.io/"
+languageCode = "zh-tw"
+DefaultContentLanguage = "zh-tw"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+[params]
+
+# Config
+
+title = "Bill.Lin 菜鳥之路"
+
 theme="anatole"
+
+author = "Bill.Lin Website"
+
+description = """
+Hi
+I'm Bill
+Backend-Engineer / Web Developer  
+Skill in Java, also interested in Kotlin  
+A little frontend work experience in vue / react 
+Pleased to meet you!
+"""
+
+
+profilePicture = "images/profile.jpg"
+
+displayMode = "dark"
+
+disableThemeSwitcher = true
+
+contentratio = 0.7
+
+readMore = true
+
+favicon = "favicons/"
+
+rssFullContent = true
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsCodefencesGuessSyntax = true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
+
+enableMediumZoom = false
+
+singleDateFormat = "2006/2/1/"
+indexDateFormat = "2006/2/1/"
+listDateFormat = "2006/2/1/"
+
+# example ["css/custom.css"]
+customCss = []
+# example ["js/custom.js"]
+customJs = [] 
+
+mainSections = ["post"]
+
+
+
+# Navigation bar
+
+[menu]
+
+  [[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "Posts"
+  weight = 200
+  identifier = "posts"
+  url = "/post/"
+
+  [[menu.main]]
+  name = "About"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
+
+
+  [[menu.main]]
+  name = "Contact"
+  weight = 400
+  identifier = "contact"
+  url = "/contact/"
+
+
+
+# Social Media
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/bill-lin-47348017a/"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/xinqilin"
+
+
+[[params.socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:zzx123bill@gmail.com"
+
+
+[outputs]
+  home = ["HTML"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
