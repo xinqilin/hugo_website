@@ -1,6 +1,11 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
+author: Bill.Lin
 date: {{ .Date }}
-draft: true
+draft: false
+tags: []
+Description: ""
+Categories: []
+DisableComments: false
 ---
 

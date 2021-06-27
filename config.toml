@@ -9,19 +9,18 @@ enableRobotsTXT = true
 
 # Config
 
-title = "Bill.Lin 菜鳥之路"
+title = "Bill.Lin 成長之路"
 
 theme="anatole"
 
-author = "Bill.Lin Website"
+author = "Bill.Lin 成長之路 @"
 
 description = """
-Hi
-I'm Bill
-Backend-Engineer / Web Developer  
-Skill in Java, also interested in Kotlin  
-A little frontend work experience in vue / react 
-Pleased to meet you!
+後端工程師 Java, Kotlin
+
+成長路上有你有我
+
+很高興認識你 Pleased to meet you!
 """
 
 
@@ -31,7 +30,7 @@ displayMode = "dark"
 
 disableThemeSwitcher = true
 
-contentratio = 0.7
+contentratio = 0.78
 
 readMore = true
 
@@ -82,15 +81,9 @@ mainSections = ["post"]
   [[menu.main]]
   name = "About"
   weight = 300
-  identifier = "about"
+  identifier = "about me"
   url = "/about/"
 
-
-  [[menu.main]]
-  name = "Contact"
-  weight = 400
-  identifier = "contact"
-  url = "/contact/"
 
 
 
@@ -111,6 +104,12 @@ url = "https://github.com/xinqilin"
 icon = "fas fa-envelope"
 title = "e-mail"
 url = "mailto:zzx123bill@gmail.com"
+
+
+[[params.socialIcons]]
+icon = "fab fa-wordpress-simple"
+title = "WordPress"
+url = "https://xinqilin.wordpress.com/"
 
 
 [outputs]
