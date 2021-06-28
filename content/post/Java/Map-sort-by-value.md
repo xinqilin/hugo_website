@@ -1,5 +1,5 @@
 ---
-title: "TreeMap Sort by Value"
+title: "Map Sort by Value"
 author: Bill.Lin
 date: 2021-06-28T15:10:59+08:00
 draft: false
@@ -9,7 +9,7 @@ Categories: ["Java"]
 DisableComments: false
 ---
 
-# TreeMap Sort by value
+# Map Sort by value
 
 有鑑於 Bill 上上週在刷 LC 時 <a href="https://leetcode.com/problems/top-k-frequent-words/"><b>題目點我!</b></a>
 
