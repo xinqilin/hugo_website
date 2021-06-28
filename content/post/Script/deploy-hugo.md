@@ -16,7 +16,7 @@ DisableComments: false
 </p>
 <br>
 
-```shell
+```console
 hugo -t <你的theme>
 ```
 <p>
