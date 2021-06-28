@@ -1,1 +1,1 @@
-hugo server -t anatole
+hugo server -t anatole -D
