@@ -32,6 +32,7 @@ public class MergeSort {
     private static void Sort(int[] array, int[] workArray, int start, int end) {
         if (start >= end) return;
 			
+        //避免溢位 start + end 可能超出去
 		int mid = start + (end - start)/2;
 
         Sort(array, workArray, start, mid);
@@ -78,7 +79,7 @@ public class MergeSort {
 ```
 
 <br>
-![MergeSortResult](/static/images/Algorithm/mergeSort/mergeSortResult.png)
+![MergeSortResult](images/Algorithm/mergeSort/mergeSortResult.png)
 <br>
 <br>
 

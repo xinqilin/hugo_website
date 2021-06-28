@@ -9,11 +9,11 @@ enableRobotsTXT = true
 
 # Config
 
-title = "Bill.Lin 成長之路"
+title = "Bill.Lin の 成長之路"
 
 theme="anatole"
 
-author = "Bill.Lin 成長之路 @"
+author = "Bill.Lin の 成長之路 ©"
 
 description = """
 後端工程師 Java, Kotlin
