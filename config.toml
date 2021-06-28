@@ -28,7 +28,7 @@ profilePicture = "images/profile.jpg"
 
 displayMode = "dark"
 
-disableThemeSwitcher = true
+# disableThemeSwitcher = true
 
 contentratio = 0.78
 
