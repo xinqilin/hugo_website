@@ -41,7 +41,7 @@ hugo -t <你的theme>
 上述其實就三個步驟，把它的 command line 都填入 **deploy.sh**
 <br>
 
-接著我想要執行這個**deploy.sh這個時順便填寫 git commit 的 message
+接著我想要執行這個 **deploy.sh** 這個時順便填寫 git commit 的 message
 <br>
 
 先宣告一個變數吧 <**commit_message**>  =>
@@ -76,7 +76,9 @@ git push
 
 之後有新 post 要部屬上 github 時
 就執行 script 檔就行了 !
-``. deploy.sh <你要留的 commit message>``
+<br>
+
+```. deploy.sh <你要留的 commit message>```
 <br>
 <br>
 
