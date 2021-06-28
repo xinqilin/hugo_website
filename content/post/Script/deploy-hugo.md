@@ -78,7 +78,12 @@ git push
 就執行 script 檔就行了 !
 <br>
 
-```. deploy.sh <你要留的 commit message>```
+```script
+
+. deploy.sh <你要留的 commit message>
+
+```
+
 <br>
 <br>
 
