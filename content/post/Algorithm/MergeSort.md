@@ -13,9 +13,10 @@ DisableComments: false
 
 ``Time complexity = log n * O(n) = O(n logn)``
 
-MergeSort 套一句柯P 講的話，小問題解決了，就沒有大問題了
-將 n 個個數的陣列，先左右各切一半，一直切，切到最小單位後，開始拿兩條被切的單位做排序、合併 ! 
-~~合久必分，分久必合~~ 
+MergeSort 套一句柯P 講的話，**小問題解決了，就沒有大問題了**<br>
+將 n 個個數的陣列，先左右各切一半，一直切，切到最小單位後，開始拿兩條被切的單位做排序、合併 ! <br>
+
+~~合久必分，分久必合~~ <br>
 
 ```java
 
@@ -75,6 +76,9 @@ public class MergeSort {
 }
 
 ```
+
+<br>
+![MergeSortResult](/static/images/Algorithm/mergeSort/mergeSortResult.png)
 <br>
 <br>
 
