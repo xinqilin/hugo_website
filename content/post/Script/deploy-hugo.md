@@ -45,7 +45,7 @@ hugo -t <你的theme>
 <br>
 
 先宣告一個變數吧 <**commit_message**>  =>
-``commit_message = "$param1"``
+``commit_message = "$1"``
 接著在需要用的變數的地方就可以直接使用 ``commit_message`` 來操縱
 <br>
 <br>
