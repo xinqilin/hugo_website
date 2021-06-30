@@ -1,7 +1,7 @@
 ---
 title: "Deploy Hugo"
 author: Bill.Lin
-date: 2021-06-28T12:36:19+08:00
+date: 2020-06-28T12:36:19+08:00
 draft: false
 tags: ["Script"]
 Description: ""
