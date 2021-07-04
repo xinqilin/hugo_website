@@ -43,7 +43,7 @@ export default new Router({
 
 > HelloWorld.vue 內容 在 [components內]
 
-```js
+```html
 
 <template>
     <div>
@@ -65,7 +65,7 @@ export default new Router({
 
 > 跳頁
 
-```js
+```html
 
 <template>
     <div>
@@ -77,14 +77,21 @@ export default new Router({
 
 ### 單向綁定
 
+```
+
 v-text v-html
 v-bind:href="link"   vue instance 內的 method 的 data:{link}
 (v-bind:href 可縮寫:href)
+
+```
 
 ### 雙向綁定
 v-model
 
 ### 綁定事件
+
+```
+
 v-on:click="num++"   =   @click
 
 v-on 防止事件冒泡{
@@ -95,7 +102,12 @@ v-on 防止事件冒泡{
 `.once`: 只執行一次
 }
 
+```
+
 ### 按鍵修飾符 v-on:keyup.13
+
+```
+
 13 是鍵碼
 v-on 按鍵修飾符 懶人包{
 `.enter`
@@ -109,11 +121,13 @@ v-on 按鍵修飾符 懶人包{
 `.right`
 }
 
+```
 
 ### v-for
 
-v-for="user in users"  或 v-for="(user, index) in users"
-v-for="(value, key, index) in users"  {{value}} {{key}} {{index}}
+```
+v-for = "user in users"  或 v-for="(user, index) in users"
+v-for = "(value, key, index) in users"  {{value}} {{key}} {{index}}
  
 v-for 增加 :key = ""  可增加效率 最主要是是別惟一值 :key 是 v-bind縮寫
 
@@ -127,13 +141,15 @@ v-show  裡面都填boolean
 v-else-if
 v-else 
 
-
-
-computed 計算屬性
-watch 監控屬性
-filter 過濾屬性  -> 使用 {{user.gender | genderFilter}}
+```
 
 ```js
+
+// computed 計算屬性
+// watch 監控屬性
+// filter 過濾屬性  -> 使用 {{user.gender | genderFilter}}
+
+
 
 new Vue({
 	el: "#app",
@@ -216,6 +232,7 @@ let app = new Vue(){
     beforeCreate: function(){
         
     }
+    // 放一些生命週期的東西
 };
 
 ```
