@@ -11,20 +11,80 @@ DisableComments: false
 
 # 筆記 Vue 未整理 version
 
+### 套件
 vetur
 vue2 snippets
+webpack  -> npm install webpack -g
+vue -> npm install -g @vue/cli-init
 chrome: vue plugin
 
+### 快速開始
 
-單向綁定
+vue init webpack <你的app名字>
+
+
+``npm run dev``
+
+main.js -> 路由 index.js  在 [router 內]
+
+```js
+
+export default new Router({
+    routes:[
+        {
+            path: '/',
+            name: 'HelloWorld',
+            component: HelloWorld
+        }
+    ]
+})
+
+```
+
+> HelloWorld.vue 內容 在 [components內]
+
+```js
+
+<template>
+    <div>
+    
+    </div>
+</template>
+
+<script>
+    export default {
+        data(){
+            return name: 'Bill'
+        }
+    }
+</script>
+
+<style></style>
+```
+
+
+> 跳頁
+
+```js
+
+<template>
+    <div>
+        <router-link to="/HelloWorld">go to hello world</router-link>
+    </div>
+</template>
+
+```
+
+### 單向綁定
+
 v-text v-html
 v-bind:href="link"   vue instance 內的 method 的 data:{link}
 (v-bind:href 可縮寫:href)
 
-雙向綁定
+### 雙向綁定
 v-model
 
-綁定事件
+### 綁定事件
 v-on:click="num++"   =   @click
 
 v-on 防止事件冒泡{
@@ -35,7 +95,7 @@ v-on 防止事件冒泡{
 `.once`: 只執行一次
 }
 
-按鍵修飾符 v-on:keyup.13
+### 按鍵修飾符 v-on:keyup.13
 13 是鍵碼
 v-on 按鍵修飾符 懶人包{
 `.enter`
@@ -50,7 +110,7 @@ v-on 按鍵修飾符 懶人包{
 }
 
 
-v-for
+### v-for
 
 v-for="user in users"  或 v-for="(user, index) in users"
 v-for="(value, key, index) in users"  {{value}} {{key}} {{index}}
@@ -144,3 +204,18 @@ new Vue({
 
 ```
 
+### lifeCycle
+
+```js
+
+let app = new Vue(){
+    el: app,
+    data: {
+
+    },
+    beforeCreate: function(){
+        
+    }
+};
+
+```
