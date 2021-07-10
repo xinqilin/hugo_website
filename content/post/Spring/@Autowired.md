@@ -1,5 +1,5 @@
 ---
-title: "@Autowired"
+title: "@Autowired is not recommended"
 author: Bill.Lin
 date: 2021-07-10T20:27:20+08:00
 draft: false
@@ -9,14 +9,15 @@ Categories: ["Spring"]
 DisableComments: false
 ---
 
-# @Autowired is not recommended 
 
-intellij 在使用 Bean Autowired 會跳出的警告 (Eclipse 不會)
+``intellij 在使用 Bean Autowired 會跳出的警告 (Eclipse 不會)``
 
 ```
 
 Field injection is not recommended 
-Inspection info: Spring Team recommends: "Always use constructor based dependency injection in your beans. Always use assertions for mandatory dependencies".
+Inspection info: Spring Team recommends: 
+"Always use constructor based dependency injection in your beans. 
+ Always use assertions for mandatory dependencies".
  
  ```
 <br>
@@ -71,7 +72,7 @@ Inspection info: Spring Team recommends: "Always use constructor based dependenc
 ```
 <br>
 
-Setter 跟 Constructor injection 差在 Setter 可以在沒有提供依賴時 ，順利執行，但 Constructor injection則會要求要強制依賴才能正常運轉
+``Setter 跟 Constructor injection 差在 Setter 可以在沒有提供依賴時 ，順利執行，但 Constructor injection則會要求要強制依賴才能正常運轉``
 
 ### Setter 
 
