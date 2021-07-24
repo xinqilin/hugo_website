@@ -5,7 +5,7 @@ date: 2021-07-25T02:21:13+08:00
 draft: false
 tags: []
 Description: ""
-Categories: []
+Categories: ["Docker"]
 DisableComments: false
 ---
 
