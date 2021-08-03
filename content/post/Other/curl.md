@@ -3,9 +3,9 @@ title: "Curl"
 author: Bill.Lin
 date: 2021-08-03T10:23:31+08:00
 draft: false
-tags: []
+tags: ["CURL"]
 Description: ""
-Categories: []
+Categories: ["Other"]
 DisableComments: false
 ---
 
@@ -26,13 +26,15 @@ DisableComments: false
 ### 常用
 
 ```
-curl [URL]
-curl -X POST/PUT [URL] -H "Content-Type: application/json" -d '{"key" : "value" }'
-curl -u [URL] <Account>:<Password>
+    curl [URL]
+    curl -X POST/PUT [URL] -H "Content-Type: application/json" -d '{"key" : "value" }'
+    curl -u [URL] <Account>:<Password>
 ```
 
 
-reference: <br>
-<a href="https://blog.techbridge.cc/2019/02/01/linux-curl-command-tutorial/">Linux Curl Command 指令與基本操作入門教學</a>
+reference: 
+<br>
+<a href="https://blog.techbridge.cc/2019/02/01/linux-curl-command-tutorial/">Linux Curl Command 指令與基本操作入門教學</a><br>
+
 <a href="https://miahsuwork.medium.com/curl-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E8%88%87%E6%8C%87%E4%BB%A4-%E6%90%AD%E9%85%8D-lidemy-http-challenge-%E5%AF%A6%E4%BD%9C-39b79511eb9e">[curl] 基本操作與指令 — 搭配 Lidemy HTTP Challenge 實作</a>
 
