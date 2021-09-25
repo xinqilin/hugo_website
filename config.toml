@@ -99,6 +99,11 @@ icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/xinqilin"
 
+[[params.socialIcons]]
+icon = "fas fa-laptop-code"
+title = "LeetCode"
+url = "https://leetcode.com/xinqilin/"
+
 
 [[params.socialIcons]]
 icon = "fas fa-envelope"
