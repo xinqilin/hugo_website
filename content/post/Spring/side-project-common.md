@@ -69,6 +69,14 @@ DisableComments: false
         <version>5.2</version>
     </dependency>
 
+    <!-- guava -->
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>30.1.1-jre</version>
+    </dependency>
+
+
 ```
 
 ### Properties or Yaml
