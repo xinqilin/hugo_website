@@ -14,7 +14,7 @@ DisableComments: false
 - born in 1994 
 - work in Taipei city ,Taiwan
 - Backend Engineer / Web Developer
-- Skill in Java, also interested in Kotlin
+- Skill in Java, Kotlin also interested in Golang
 - A little frontend work experience in vue / react 
 - Pleased to meet you!
 
