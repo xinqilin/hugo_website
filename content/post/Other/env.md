@@ -16,18 +16,18 @@ u: All Users
 x: execute
 chmod u+x *.sh  
 
-Homebrew
+### Homebrew
 
 ``/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``
 ``brew install cask``
 ``brew install wget``
 
-SDKMAN
+### SDKMAN
 
 ``curl -s "https://get.sdkman.io" | bash``
 ``source "$HOME/.sdkman/bin/sdkman-init.sh"``
 
-OPENJDK
+### OPENJDK
 
 /Library/Java/JavaVirtualMachines/  下面
 ``/usr/libexec/java_home --verbose``
@@ -39,7 +39,7 @@ remove
     sudo rm -rf amazon-corretto-11.jdk
 ```
 
-MAVEN & GRADLE
+### MAVEN & GRADLE
 
 ```s
     sdk list java
@@ -54,10 +54,15 @@ MAVEN & GRADLE
     sdk install maven 'version'
 ```
 
-NVM
+### NVM
 
 ``curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash``
 
+### CheatSheet
+
+### Fig
+
+``brew install --cask fig``
 
 ### zsh
 
