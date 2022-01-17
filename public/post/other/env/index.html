@@ -161,7 +161,7 @@
 
     ,
         "url" : "https:\/\/xinqilin.github.io\/post\/other\/env\/",
-        "wordCount" : "750",
+        "wordCount" : "756",
         "genre" : [ 
       
       "MAC"
@@ -355,20 +355,20 @@
 +: add permission
 x: execute
 chmod u+x *.sh</p>
-<p>Homebrew</p>
+<h3 id="homebrew">Homebrew</h3>
 <p><code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code>
 <code>brew install cask</code>
 <code>brew install wget</code></p>
-<p>SDKMAN</p>
+<h3 id="sdkman">SDKMAN</h3>
 <p><code>curl -s &quot;https://get.sdkman.io&quot; | bash</code>
 <code>source &quot;$HOME/.sdkman/bin/sdkman-init.sh&quot;</code></p>
-<p>OPENJDK</p>
+<h3 id="openjdk">OPENJDK</h3>
 <p>/Library/Java/JavaVirtualMachines/  下面
 <code>/usr/libexec/java_home --verbose</code></p>
 <p>remove</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-s" data-lang="s">    cd <span style="color:#f92672">/</span>Library<span style="color:#f92672">/</span>Java<span style="color:#f92672">/</span>JavaVirtualMachines<span style="color:#f92672">/</span>
     sudo rm <span style="color:#f92672">-</span>rf amazon<span style="color:#f92672">-</span>corretto<span style="color:#ae81ff">-11</span>.jdk
-</code></pre></div><p>MAVEN &amp; GRADLE</p>
+</code></pre></div><h3 id="maven--gradle">MAVEN &amp; GRADLE</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-s" data-lang="s">    sdk list java
     sdk current java
     sdk list java
@@ -379,8 +379,11 @@ chmod u+x *.sh</p>
     history<span style="color:#f92672">|</span> grep sdk
     sdk list maven
     sdk install maven <span style="color:#e6db74">&#39;version&#39;</span>
-</code></pre></div><p>NVM</p>
+</code></pre></div><h3 id="nvm">NVM</h3>
 <p><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</code></p>
+<h3 id="cheatsheet">CheatSheet</h3>
+<h3 id="fig">Fig</h3>
+<p><code>brew install --cask fig</code></p>
 <h3 id="zsh">zsh</h3>
 <pre tabindex="0"><code>    # JDK
     JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
