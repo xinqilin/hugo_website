@@ -34,14 +34,14 @@ chmod u+x *.sh
 
 remove
 
-```s
+```zsh
     cd /Library/Java/JavaVirtualMachines/
     sudo rm -rf amazon-corretto-11.jdk
 ```
 
 ### MAVEN & GRADLE
 
-```s
+```zsh
     sdk list java
     sdk current java
     sdk list java
@@ -64,9 +64,20 @@ remove
 
 ``brew install --cask fig``
 
+### leave end of file to change userName
+
+```zsh
+    prompt_context() {
+    if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+        prompt_segment black default "%(!.%{%F{yellow}%}.)Bill"
+    fi
+    }
+```
+
+
 ### zsh
 
-```
+```zsh
     # JDK
     JAVA_HOME=/Library/Java/JavaVirtualMachines/amazon-corretto-11.jdk/Contents/Home
     PATH=$JAVA_HOME/bin:$PATH:.
