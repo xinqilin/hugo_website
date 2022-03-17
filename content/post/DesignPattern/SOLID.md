@@ -59,6 +59,8 @@ A class should have only reason to change it
 - 可讀性高
 - 可維護姓提升
 - 只有改這個才有影響
+- 這個類別只做這件事
+- 一個一個 component 不是他的事 他別碰
 <br>
 
 ### Dependency inversion principle 依賴反轉
