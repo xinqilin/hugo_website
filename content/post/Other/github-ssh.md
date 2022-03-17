@@ -29,3 +29,15 @@ DisableComments: false
 
 ```
 
+
+### 重設 remote url => https 改 ssh
+
+```zsh
+    git remote rm origin
+    git remote add origin [url]
+```
+
+### 應用程式要用的 token
+
+setting -> developer setting -> personal access token -> generate new token
+
