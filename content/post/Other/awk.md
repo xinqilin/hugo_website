@@ -59,3 +59,38 @@ example:
 ```
 
 
+＝＝＝＝＝ advanced ＝＝＝＝＝
+
+awk 'BEGIN{statement} {main statement} END{statement}'  
+BEGIN, END 執行一次 main 可多次
+
+String ~ /regex/[actions] => String match regex, then execute actions
+String !~ /regex/[actions]  => String not match regex, then execute actions
+/regex/[actions] file => file match regex, then execute actions
+!/regex/[actions] file => file not match regex, then execute actions
+
+"NF"  => Number of Fields 
+"NR"  => Number of Records
+"ARGC" => number of arguments
+  ``awk 'BEGIN {print "Arguments =", ARGC}' One Two Three Four`` => Arguments = 5
+
+"ARGV" => input arguments in vector
+
+```zsh
+    awk 'BEGIN { 
+    for (i = 0; i < ARGC - 1; ++i) { 
+        printf "ARGV[%d] = %s\n", i, ARGV[i] 
+    } 
+    }' one two three four
+```
+
+
+...to be continued...
+
+
+
+
+reference: <a href="https://www.hy-star.com.tw/tech/linux/awk/awk.html#awk_basic" alt="awk basic" target="_blank">awk basic</a>
+
+
+
