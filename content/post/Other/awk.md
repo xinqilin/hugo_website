@@ -84,13 +84,17 @@ String !~ /regex/[actions]  => String not match regex, then execute actions
     }' one two three four
 ```
 
+"FNR" => record number in current file
+"IGNORECASE" => ignore case
+"OFMT" => output format for numbers
+"RSTART" => index of first character matched by match
+"RLENGTH" => match length of string matched by match
 
-...to be continued...
 
 
 
-
-reference: <a href="https://www.hy-star.com.tw/tech/linux/awk/awk.html#awk_basic" alt="awk basic" target="_blank">awk basic</a>
-
+reference: 
+    <a href="https://www.hy-star.com.tw/tech/linux/awk/awk.html#awk_basic" alt="awk basic" target="_blank">awk basic</a>
+    <a href="https://www.tutorialspoint.com/awk/awk_built_in_variables.htm" alt="awk tutorial" target="_blank">awk tutorial</a>
 
 
