@@ -1,7 +1,7 @@
 ---
 title: "sed"
 author: Bill.Lin
-date: 2022-01-18T10:23:31+08:00
+date: 2019-01-18T10:23:31+08:00
 draft: false
 tags: ["SED"]
 Description: ""
@@ -9,9 +9,10 @@ Categories: ["Other"]
 DisableComments: false
 ---
 
-Ref: <a href="https://tw511.com/a/01/11537.html" alt="TW511教學網">TW511教學網</a>
+### sed
 
 sed [options] '[地址定界] command' file(s)
+sed 	-e	'1,8	s/	[Tt]he/	THE/	g'	MyFile.txt 
 
 ```
 
@@ -56,4 +57,11 @@ sed [options] '[地址定界] command' file(s)
    \U：把replacement字母轉換成大寫，直到\L或\E出現。
    \E：停止以\L或\U開始的大小寫轉換
  ```
+
+
+... to be continued...
+
+
+reference: 
+   <a href="https://tw511.com/a/01/11537.html" alt="TW511教學網" target="_blank">TW511教學網</a>
 
