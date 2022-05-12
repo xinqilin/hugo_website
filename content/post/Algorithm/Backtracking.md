@@ -86,27 +86,32 @@ DisableComments: false
 
 ```java
 
+    class Solution {
     public List<List<Integer>> permuteUnique(int[] nums) {
-        List<List<Integer>> list = new ArrayList<>();
+        var ans = new ArrayList<List<Integer>>();
         Arrays.sort(nums);
-        backtrack(list, new ArrayList<>(), nums, new boolean[nums.length]);
-        return list;
+        bt(ans, nums, 0, new ArrayList<Integer>(), new boolean[nums.length]);
+        return ans;
     }
-
-    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums, boolean [] used){
-        if(tempList.size() == nums.length){
-            list.add(new ArrayList<>(tempList));
-        } else{
-            for(int i = 0; i < nums.length; i++){
-                if(used[i] || i > 0 && nums[i] == nums[i-1] && !used[i - 1]) continue;
-                used[i] = true; 
-                tempList.add(nums[i]);
-                backtrack(list, tempList, nums, used);
-                used[i] = false; 
-                tempList.remove(tempList.size() - 1);
-            }
+    
+    void bt(List<List<Integer>> ans, int[] nums, int start, List<Integer> curr, boolean[] visited){
+        if(start == nums.length){
+            ans.add(new ArrayList<>(curr));
+            return;
+        }
+        
+        for(var i = 0; i < nums.length; i++){
+            if(visited[i]) continue;
+            if (i > 0 && nums[i] == nums[i - 1] && !visited[i - 1]) continue;
+            
+            visited[i] = true;
+            curr.add(nums[i]);
+            bt(ans, nums, start + 1, curr, visited);
+            visited[i] = false;
+            curr.remove(curr.size() - 1);
         }
     }
+}
 
 ```
 
